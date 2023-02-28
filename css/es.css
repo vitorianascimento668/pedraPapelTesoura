@@ -1,3 +1,12 @@
 body{
     background-color: #AC9250;
 }
+h1{
+    text-align: center;
+    color:#163756;
+    text-shadow: 3px 0px 5px white;}
+.imagens_container, .tabela_pontos, .pontos{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
