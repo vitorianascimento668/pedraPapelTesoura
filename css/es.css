@@ -25,12 +25,12 @@ h1{
 } 
 .blue{
     color: blue ;
-    text-shadow: 2px 0px 3px  rgba(14, 14, 14, 0.788);
+    text-shadow: 2px 0px 3px  rgba(14, 14, 14, 0.925);
     font-weight: bold;
 }
 .vc_red{
     color: red ;
-    text-shadow: 2px 0px 3px rgba(2, 2, 2, 0.651);
+    text-shadow: 2px 0px 3px rgba(2, 2, 2, 0.767);
     font-weight: bold;
 }
 .blue, .vc_red{
@@ -55,6 +55,7 @@ h1{
     padding: 20px;
     text-align: center;
     text-decoration: overline underline ;
+    font-size: 20px;
     color:#163756;
     font-weight: bold;
     text-shadow: 2px 0px 3px rgba(255, 255, 255, 0.514);
@@ -84,7 +85,7 @@ h1{
 
 
 .ponto_voce{
-    background-color: rgba(113, 158, 241, 0.199);
+    
     text-align: center;
     color: red ;
     text-shadow: 2px 0px 3px rgb(255, 255, 255);
@@ -94,7 +95,6 @@ h1{
 .ponto_Robo{
     margin-top: -14px;
     border-top: 0px;
-    background-color: rgba(113, 158, 241, 0.199);
     text-align: center;
     color: blue ;
     text-shadow: 2px 0px 3px rgb(255, 255, 255);
@@ -121,4 +121,18 @@ h1{
 }
 .borda_cima{
     border-top: 0px solid black;
+}
+.imagens_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagens_daMao{
+    width:200px;
+    height: 120px;
+    background-color: #1C4267;
+    margin: 30px;
+    border:8px solid #58A1A1;
+    border-radius: 25px;
+    box-shadow: 1px 8px 14px #7e0101;
 }
