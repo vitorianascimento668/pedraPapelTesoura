@@ -40,6 +40,69 @@ h1{
     
     margin: auto;
 }
+
+.pontos_tot{
+    padding: 20px;
+    text-align: center;
+    text-decoration: overline underline ;
+    color:#163756;
+    font-weight: bold;
+    text-shadow: 2px 0px 3px rgba(255, 255, 255, 0.514);
+
+}
+.pontos{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 45px;
+    width: 371px;
+    margin: auto;
+}
+.ponto_voce, .ponto_Robo{
+    background-color: transparent;
+    border-left: 1px solid rgb(7, 91, 247);
+    border-bottom: 1px solid rgb(7, 91, 247);
+    border-top: 1px solid rgb(7, 91, 247);
+    width: 50px;
+    outline: none;
+    height: 20px;
+    padding: 5px 1px;
+    margin-top: 0px;
+   
+}
+
+
+
+.ponto_voce{
+    background-color: rgba(113, 158, 241, 0.199);
+    text-align: center;
+}
+
+.ponto_Robo{
+    margin-top: -20px;
+    border-top: 0px;
+    background-color: rgba(113, 158, 241, 0.199);
+    text-align: center;
+    color: ;
+
+}
+.quadrado2{
+    display: flex;
+}
+.quadro_pontos{
+    display: grid;
+    grid-template-columns: 25px;
+    grid-template-rows: 30px;
+    border-left: 1px solid rgb(7, 91, 247);
+    border-right: 1px solid rgb(7, 91, 247);
+    border-bottom: 1px solid rgb(7, 91, 247);
+}
+ .quadrim_baixo.quadro_pontos{
+    margin-top: -19px;
+}
 .quadrim_baixo, .blue{
     border-bottom: 0px solid black;
+}
+.borda_cima{
+    border-top: 0px solid black;
 }
