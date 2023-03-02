@@ -22,8 +22,7 @@ h1{
 
 .quadrado{
    display:flex;
-   
-}
+} 
 .blue, .vc_red{
     border-left: 1px solid black;
     border-right: 1px solid black;
@@ -36,7 +35,11 @@ h1{
 .tabela{
     display: flex;
     background-color:white;
-    box-shadow: 2px 4px 0px #0000008e;}
+    box-shadow: 2px 4px 0px #0000008e;
+    width: 571px;
+    
+    margin: auto;
+}
 .quadrim_baixo, .blue{
     border-bottom: 0px solid black;
 }
