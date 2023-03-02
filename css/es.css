@@ -135,4 +135,29 @@ h1{
     border:8px solid #58A1A1;
     border-radius: 25px;
     box-shadow: 1px 8px 14px #7e0101;
+    cursor: pointer;
+}
+.mao_Papel img{
+   width: 100px;
+   height: 100px;
+}
+.mao_Papel,.mao_Tesoura{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+.mao_Tesoura img{
+    width: 100px;
+   height: 100px;
+}
+.mao_Pedra img{
+    width: 150px;
+   height: 120px;
+}
+.mao_Pedra{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -8px;
 }
