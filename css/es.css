@@ -23,6 +23,16 @@ h1{
 .quadrado{
    display:flex;
 } 
+.blue{
+    color: blue ;
+    text-shadow: 2px 0px 3px  rgba(14, 14, 14, 0.788);
+    font-weight: bold;
+}
+.vc_red{
+    color: red ;
+    text-shadow: 2px 0px 3px rgba(2, 2, 2, 0.651);
+    font-weight: bold;
+}
 .blue, .vc_red{
     border-left: 1px solid black;
     border-right: 1px solid black;
@@ -76,14 +86,20 @@ h1{
 .ponto_voce{
     background-color: rgba(113, 158, 241, 0.199);
     text-align: center;
+    color: red ;
+    text-shadow: 2px 0px 3px rgb(255, 255, 255);
+    font-weight: bold;
 }
 
 .ponto_Robo{
-    margin-top: -20px;
+    margin-top: -14px;
     border-top: 0px;
     background-color: rgba(113, 158, 241, 0.199);
     text-align: center;
-    color: ;
+    color: blue ;
+    text-shadow: 2px 0px 3px rgb(255, 255, 255);
+    font-weight: bold;
+
 
 }
 .quadrado2{
