@@ -161,3 +161,7 @@ h1{
     align-items: center;
     margin-top: -8px;
 }
+.imagens_daMao:hover{
+    background-color: #440808;
+    border-color:#fcae06a2 ;
+}
