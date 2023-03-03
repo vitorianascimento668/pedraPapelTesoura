@@ -112,6 +112,11 @@ h1{
     border-left: 1px solid rgb(7, 91, 247);
     border-right: 1px solid rgb(7, 91, 247);
     border-bottom: 1px solid rgb(7, 91, 247);
+    text-align: center;
+    align-items: center;
+    font-size:18px;
+    color:white;
+    font-weight: bolder;
 }
  .quadrim_baixo.quadro_pontos{
     margin-top: -19px;
@@ -164,4 +169,8 @@ h1{
 .imagens_daMao:hover{
     background-color: #440808;
     border-color:#fcae06a2 ;
+}
+.img_pequenininha{
+    width:40px;
+    height: 40px;
 }
