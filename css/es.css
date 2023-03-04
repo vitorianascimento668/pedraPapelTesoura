@@ -96,7 +96,7 @@ h1{
     box-shadow: 2px 4px 0px #0000008e;
     width: 571px;
     
-    margin: auto;
+    margin: auto;.quadrim_baixo.quadro_pon
 }
 
 .pontos_tot{
@@ -113,7 +113,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    height: 45px;
+    height: 31px;
     width: 371px;
     margin: auto;
 }
@@ -141,7 +141,7 @@ h1{
 }
 
 .ponto_Robo{
-    margin-top: -14px;
+    
     border-top: 0px;
     text-align: center;
     color: blue ;
@@ -166,9 +166,7 @@ h1{
     color:white;
     font-weight: bolder;
 }
- .quadrim_baixo.quadro_pontos{
-    margin-top: -19px;
-}
+
 .quadrim_baixo, .blue{
     border-bottom: 0px solid black;
 }
@@ -179,7 +177,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    display: none;
+    /*display: none;*/
 }
 .imagens_daMao{
     width:200px;
@@ -228,9 +226,9 @@ h1{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
+    height: 250px;
 
-    /*display:none;*/
+    display:none;
 
   
 }
@@ -250,5 +248,5 @@ h1{
         animation-duration: 2s;
         animation-name: direita;
         margin-bottom: 40px;
-        height: 250px;
+        
 }
