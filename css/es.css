@@ -1,10 +1,37 @@
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+ *{
+    margin: 0;
+    padding:0;
+ } 
 body{
+    background-color: white;
+}
+section{
     background-color: #AC9250;
+    margin: auto;
+    max-height: 700px;
+    min-height: 550px;
+    padding: 0;
+    min-width: 500px;
+    max-width: 700px;
+
 }
 h1{
     text-align: center;
     color:#163756;
-    text-shadow: 3px 0px 5px white;}
+    text-shadow: 3px 0px 5px white;
+    padding-top:10px;
+}
 .imagens_container, .tabela_pontos, .pontos{
     display:flex;
     justify-content: center;
@@ -135,6 +162,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
+    /*display: none;*/
 }
 .imagens_daMao{
     width:200px;
@@ -145,6 +173,7 @@ h1{
     border-radius: 25px;
     box-shadow: 1px 8px 14px #7e0101;
     cursor: pointer;
+    /*display: none;*/
 }
 .mao_Papel img{
    width: 100px;
@@ -177,4 +206,22 @@ h1{
 .img_pequenininha{
     width:40px;
     height: 40px;
+}
+.joquepo_container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 500px;
+
+    display:none;
+
+  
+}
+.imagens_Joquepo{
+    width:200px;
+    height:120px;
+    padding: 30px;
+    animation-duration: 2s;
+    animation-name: slidein;
+
 }
