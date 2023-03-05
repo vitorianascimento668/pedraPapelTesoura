@@ -25,10 +25,35 @@ function jogada_robo(){
     valorescolhido_robo(v_sorteado)
 }
 function valorescolhido_voce(valor_voce) {
-   
+   if (valor_voce == 0){
+
+
+   }
+   if (valor_voce == 1){
+
+    
+   }
+   if (valor_voce == 2){
+
+    
+   }
 }
 function valorescolhido_robo(valor_robo) {
-  
+    if(valor_robo == 0){
+
+
+
+    }
+    if(valor_robo == 1){
+
+
+        
+    }
+    if(valor_robo == 2){
+
+
+        
+    }
 }
 
 jogada_voce()
