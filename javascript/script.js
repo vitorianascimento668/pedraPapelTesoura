@@ -5,9 +5,7 @@ let lado_esquerdo_voce = document.querySelector(".joquepo1")
 let lado_direito_robo = document.querySelector(".joquepo2")
 let quadrim_voce = document.querySelectorAll(".quadradim")
 let quadrim_robo = document.querySelectorAll(".quadrim_baixo")
-let data_num,data_voce,data_robo, v_sorteado, valor_voce, valor_robo, varvoce = "", varrobo = "", contador = 0, img_voce
-img_voce = document.createElement("img")
-img_voce.classList.add("img_pequenininha")
+let data_num,data_voce,data_robo, v_sorteado, valor_voce, valor_robo, varvoce = "", varrobo = "", contador = 0, img_voce, img_robo, contador2=0
 
 
 function jogada_voce(){
@@ -60,18 +58,37 @@ function valorescolhido_voce(valor_voce) {
 function valorescolhido_robo(valor_robo) {
     if(valor_robo == 0){
         lado_direito_robo.src = "./imagens/pedra_direita-removebg-preview.png"
-
-
+        setTimeout(()=>{
+            img_robo.src = "./imagens/ilustracao-de-desenho-animado-com-a-mao-fechada-pop-art-ilustracao_244307-535-removebg-preview.png"
+            quadrim_robo[contador2].appendChild(img_robo)
+            contador2++
+        },'100')
+        
     }
     if(valor_robo == 1){
         lado_direito_robo.src = "./imagens/papel_direito-removebg-preview.png"
-
+        setTimeout(()=>{
+            img_robo.src = "./imagens/dsBuffer.bmp.png"
+            quadrim_robo[contador2].appendChild(img_robo)
+            contador2++
+        },'100')
     }
     if(valor_robo == 2){
         lado_direito_robo.src = "./imagens/tesoura_direita-removebg-preview.png"
-
+        setTimeout(()=>{
+            img_robo.src = "./imagens/mao-com-dois-dedos-para-cima-vitoria-ou-simbolo-de-paz-letra-v-em-gesto-de-tesoura-de-linguagem-gest.png"
+            quadrim_robo[contador2].appendChild(img_robo)
+            contador2++
+        },'100')
         
     }
 }
-
+function criando_img (){
+    img_voce = document.createElement("img")
+    img_voce.classList.add("img_pequenininha")
+    img_robo = document.createElement("img")
+    img_robo.classList.add("img_pequenininha")
+    
+}
 jogada_voce()
+criando_img ()
