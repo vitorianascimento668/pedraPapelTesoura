@@ -95,8 +95,7 @@ h1{
     background-color:white;
     box-shadow: 2px 4px 0px #0000008e;
     width: 571px;
-    
-    margin: auto;.quadrim_baixo.quadro_pon
+    margin: auto;
 }
 
 .pontos_tot{
@@ -227,7 +226,6 @@ h1{
     justify-content: space-around;
     align-items: center;
     height: 250px;
-
     display:none;
 
   
