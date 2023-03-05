@@ -39,17 +39,16 @@ function valorescolhido_voce(valor_voce) {
 }
 function valorescolhido_robo(valor_robo) {
     if(valor_robo == 0){
-        lado_direito_robo
+        lado_direito_robo.src = "./imagens/pedra_direita-removebg-preview.png"
 
 
     }
     if(valor_robo == 1){
-        lado_direito_robo
+        lado_direito_robo.src = "./imagens/papel_direito-removebg-preview.png"
 
-        
     }
     if(valor_robo == 2){
-        lado_direito_robo
+        lado_direito_robo.src = "./imagens/tesoura_direita-removebg-preview.png"
 
         
     }
