@@ -10,7 +10,7 @@ jogada_escolha.forEach((jogada)=>{
 }
 
 function jogada_robo(){
-    v_sorteado = Math.random()
+    v_sorteado = Math.floor(Math.random() * (3-0)+ 0)
 }
 
 jogada_voce()
