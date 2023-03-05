@@ -52,7 +52,9 @@ function valorescolhido_voce(valor_voce) {
         quadrim_voce[contador].appendChild(img_voce)
         contador++
     },'100')
-    
+    if (contador == 9){
+        contador = 0
+    }
    }
 }
 function valorescolhido_robo(valor_robo) {
