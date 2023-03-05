@@ -26,31 +26,30 @@ function jogada_robo(){
 }
 function valorescolhido_voce(valor_voce) {
    if (valor_voce == 0){
-
+    lado_esquerdo_voce = "./imagens/pedra_direita-removebg-preview.png"
 
    }
    if (valor_voce == 1){
-
-    
+    lado_esquerdo_voce.src = "./imagens/Meu projeto.png"
    }
    if (valor_voce == 2){
-
+    lado_esquerdo_voce.src = "./imagens/tesoura_esquerda-removebg-preview.png"
     
    }
 }
 function valorescolhido_robo(valor_robo) {
     if(valor_robo == 0){
-
+        lado_direito_robo
 
 
     }
     if(valor_robo == 1){
-
+        lado_direito_robo
 
         
     }
     if(valor_robo == 2){
-
+        lado_direito_robo
 
         
     }
