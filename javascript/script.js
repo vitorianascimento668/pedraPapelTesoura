@@ -8,7 +8,7 @@ function jogada_voce(){
 jogada_escolha.forEach((jogada)=>{
     jogada.addEventListener("click",()=>{
         data_num = jogada.getAttribute("data-num")
-        valorescolhido(data_num)
+        valorescolhido_voce(data_num)
         jogada_robo()
 
         imagens_container.style.display = "none"
@@ -20,16 +20,13 @@ jogada_escolha.forEach((jogada)=>{
 
 function jogada_robo(){
     v_sorteado = Math.floor(Math.random() * (3-0)+ 0)
-    valorescolhido(v_sorteado)
+    valorescolhido_robo(v_sorteado)
 }
-function valorescolhido(valor_voce) {
-   if (varvoce.length == 0){
-        varvoce =  valor_voce
-   }setInterval (()=>{
-    if (varrobo.length > 0 ) {
-        varrobo = valor_voce
-    }
-   },'100')
+function valorescolhido_voce(valor_voce) {
+   console.log(valor_voce)
+}
+function valorescolhido_robo(valor_robo) {
+   console.log(valor_robo)
 }
 
 jogada_voce()
