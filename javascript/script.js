@@ -3,7 +3,11 @@ let imagens_container = document.querySelector (".imagens_container")
 let joquepo_container = document.querySelector(".joquepo_container")
 let lado_esquerdo_voce = document.querySelector(".joquepo1")
 let lado_direito_robo = document.querySelector(".joquepo2")
-let data_num,data_voce,data_robo, v_sorteado, valor_voce, valor_robo, varvoce = "", varrobo = ""
+let quadrim_voce = document.querySelectorAll(".quadradim")
+let quadrim_robo = document.querySelectorAll(".quadrim_baixo")
+let data_num,data_voce,data_robo, v_sorteado, valor_voce, valor_robo, varvoce = "", varrobo = "", contador = 0, img_voce
+img_voce = document.createElement("img")
+img_voce.classList.add("img_pequenininha")
 
 
 function jogada_voce(){
@@ -27,13 +31,27 @@ function jogada_robo(){
 function valorescolhido_voce(valor_voce) {
    if (valor_voce == 0){
     lado_esquerdo_voce = "./imagens/pedra_direita-removebg-preview.png"
-
+        setTimeout(()=>{
+            img_voce.src = "./imagens/ilustracao-de-desenho-animado-com-a-mao-fechada-pop-art-ilustracao_244307-535-removebg-preview.png"
+            quadrim_voce[contador].appendChild(img_voce)
+            contador++
+        },'100')
    }
    if (valor_voce == 1){
     lado_esquerdo_voce.src = "./imagens/Meu projeto.png"
+    setTimeout(()=>{
+        img_voce.src = "./imagens/dsBuffer.bmp.png"
+        quadrim_voce[contador].appendChild(img_voce)
+        contador++
+    },'100')
    }
    if (valor_voce == 2){
     lado_esquerdo_voce.src = "./imagens/tesoura_esquerda-removebg-preview.png"
+    setTimeout(()=>{
+        img_voce.src = "./imagens/mao-com-dois-dedos-para-cima-vitoria-ou-simbolo-de-paz-letra-v-em-gesto-de-tesoura-de-linguagem-gest.png"
+        quadrim_voce[contador].appendChild(img_voce)
+        contador++
+    },'100')
     
    }
 }
