@@ -1,6 +1,8 @@
 let jogada_escolha = document.querySelectorAll(".mao")
 let imagens_container = document.querySelector (".imagens_container")
 let joquepo_container = document.querySelector(".joquepo_container")
+let lado_esquerdo_voce = document.querySelector(".joquepo1")
+let lado_direito_robo = document.querySelector(".joquepo2")
 let data_num,data_voce,data_robo, v_sorteado, valor_voce, valor_robo, varvoce = "", varrobo = ""
 
 
