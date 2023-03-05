@@ -23,10 +23,10 @@ function jogada_robo(){
     valorescolhido_robo(v_sorteado)
 }
 function valorescolhido_voce(valor_voce) {
-   console.log(valor_voce)
+   
 }
 function valorescolhido_robo(valor_robo) {
-   console.log(valor_robo)
+  
 }
 
 jogada_voce()
