@@ -1,13 +1,15 @@
 let jogada_escolha = document.querySelectorAll(".mao")
 let imagens_container = document.querySelector (".imagens_container")
 let joquepo_container = document.querySelector(".joquepo_container")
+let textorobo = document.querySelector(".robo_azul")
+let textovoce = document.querySelector(".vc_ver")
 let lado_esquerdo_voce = document.querySelector(".joquepo1")
 let lado_direito_robo = document.querySelector(".joquepo2")
 let quemGanhou = document.querySelector(".quemGanhou")
 let imagem = document.querySelectorAll(".imagem")
 let imagem_robo = document.querySelectorAll(".imagem_robo")
 let novarN = document.querySelector(".jogaNovamente")
-let data_num,data_voce,data_robo, v_sorteado, valor_voce, valor_robo, varvoce = "", varrobo = "", contador = 0, contador2=0
+let data_num,data_voce,data_robo, v_sorteado, valor_voce, valor_robo, varvoce = "", varrobo = "", contador = 0, contador2=0, robo_pontos = 0, voce_pontos = 0
 
 
 function jogada_voce(){
@@ -96,9 +98,45 @@ function valorescolhido_robo(valor_robo) {
     QuemGanhou()
 }
 function QuemGanhou(){
-        if (Number(v_sorteado) == Number(data_num)){
+        v_sorteado = Number(v_sorteado)
+        data_num = Number(data_num)
+        if ( v_sorteado == data_num){
             quemGanhou.innerHTML= "EMPATOOU !"
         }
+        if (v_sorteado == 0 && data_num == 1 ){
+            quemGanhou.innerHTML= "VOCÊ GANHOU !"
+            voce_pontos++
+            textovoce.innerHTML = `VOCÊ: ${voce_pontos}`
+        }
+        if (v_sorteado == 1 && data_num == 0 ){
+            quemGanhou.innerHTML= "ROBO GANHOU !"
+            robo_pontos++
+            textorobo.innerHTML = `ROBO: ${robo_pontos}`
+        }
+        if (v_sorteado == 2 && data_num == 0 ){
+            quemGanhou.innerHTML= "VOCÊ GANHOU !"
+            voce_pontos++
+            textovoce.innerHTML = `VOCÊ: ${voce_pontos}`
+            
+        }
+        if (v_sorteado == 0 && data_num == 2 ){
+            quemGanhou.innerHTML= "ROBO GANHOU !"
+            robo_pontos++
+            textorobo.innerHTML = `ROBO: ${robo_pontos}`
+        }
+        if (v_sorteado == 1 && data_num == 2 ){
+            quemGanhou.innerHTML= "VOCÊ GANHOU !"
+            voce_pontos++
+            textovoce.innerHTML = `VOCÊ: ${voce_pontos}`
+        }
+        if (v_sorteado == 2 && data_num == 1 ){
+            quemGanhou.innerHTML= "ROBO GANHOU !"
+            robo_pontos++
+            textorobo.innerHTML = `ROBO: ${robo_pontos}`
+        }
+       
+
+
 
 }
 function  novarNovamente(){
