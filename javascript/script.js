@@ -9,7 +9,7 @@ let quemGanhou = document.querySelector(".quemGanhou")
 let imagem = document.querySelectorAll(".imagem")
 let imagem_robo = document.querySelectorAll(".imagem_robo")
 let novarN = document.querySelector(".jogaNovamente")
-let data_num,data_voce,data_robo, v_sorteado, valor_voce, valor_robo, varvoce = "", varrobo = "", contador = 0, contador2=0, robo_pontos = 0, voce_pontos = 0
+let data_num,data_voce,data_robo, v_sorteado, valor_voce, valor_robo, varvoce = "", varrobo = "", contador = 0, contador2=0, robo_pontos = 0, voce_pontos = 0, cont_quemGanhou=0
 
 
 function jogada_voce(){
@@ -135,7 +135,21 @@ function QuemGanhou(){
             textorobo.innerHTML = `ROBO: ${robo_pontos}`
         }
        
+        cont_quemGanhou ++
+        if (cont_quemGanhou == 10){
+            if(voce_pontos > robo_pontos){
+                quemGanhou.innerHTML = "PARABENS!! VOCÊ GANHOU O JOGO"
+            }
+            if (robo_pontos > voce_pontos){
+                quemGanhou.innerHTML = "SINTO MUITO, O ROBO GANHOU E VOCÊ PERDEU !!!"
+            }
+            if (robo_pontos == voce_pontos){
+                quemGanhou.innerHTML = "O PLACAR DA JOGO FICOU EMPATADO!!!"
 
+            }
+            robo_pontos = 0
+            voce_pontos = 0
+        }
 
 
 }
