@@ -3,11 +3,11 @@ let imagens_container = document.querySelector (".imagens_container")
 let joquepo_container = document.querySelector(".joquepo_container")
 let lado_esquerdo_voce = document.querySelector(".joquepo1")
 let lado_direito_robo = document.querySelector(".joquepo2")
-
+let quemGanhou = document.querySelector(".quemGanhou")
 let imagem = document.querySelectorAll(".imagem")
 let imagem_robo = document.querySelectorAll(".imagem_robo")
 let novarN = document.querySelector(".jogaNovamente")
-let data_num,data_voce,data_robo, v_sorteado, valor_voce, valor_robo, varvoce = "", varrobo = "", contador = 0, res_voce, res_robo, contador2=0
+let data_num,data_voce,data_robo, v_sorteado, valor_voce, valor_robo, varvoce = "", varrobo = "", contador = 0, contador2=0
 
 
 function jogada_voce(){
@@ -29,7 +29,7 @@ function jogada_robo(){
     valorescolhido_robo(v_sorteado)
 }
 function valorescolhido_voce(valor_voce) {
-    res_voce = valor_voce
+   
    if (valor_voce == 0){
     lado_esquerdo_voce.src = "./imagens/pedra_esquerda-removebg-preview.png"
         setTimeout(()=>{
@@ -62,7 +62,7 @@ function valorescolhido_voce(valor_voce) {
 
 }
 function valorescolhido_robo(valor_robo) {
-    res_robo = valor_robo
+    
     if(valor_robo == 0){
         lado_direito_robo.src = "./imagens/pedra_direita-removebg-preview.png"
         setTimeout(()=>{
@@ -92,9 +92,13 @@ function valorescolhido_robo(valor_robo) {
     if (contador2 == 10){
         contador2 = 0
     }
+
+    QuemGanhou()
 }
 function QuemGanhou(){
-
+        if (Number(v_sorteado) == Number(data_num)){
+            quemGanhou.innerHTML= "EMPATOOU !"
+        }
 
 }
 function  novarNovamente(){
@@ -105,5 +109,5 @@ function  novarNovamente(){
 }
 novarNovamente()
 jogada_voce()
-QuemGanhou()
+
 
