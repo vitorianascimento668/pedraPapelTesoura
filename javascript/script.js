@@ -32,25 +32,25 @@ function valorescolhido_voce(valor_voce) {
    if (valor_voce == 0){
     lado_esquerdo_voce = "./imagens/pedra_direita-removebg-preview.png"
         setTimeout(()=>{
-            img_voce.src = "./imagens/ilustracao-de-desenho-animado-com-a-mao-fechada-pop-art-ilustracao_244307-535-removebg-preview.png"
-            quadrim_voce[contador] =  quadrim_voce[contador].appendChild(img_voce)
+            imagem[contador].src = "./imagens/ilustracao-de-desenho-animado-com-a-mao-fechada-pop-art-ilustracao_244307-535-removebg-preview.png"
+            imagem[contador].style.display = "flex"
             contador++
         },'100')
    }
    if (valor_voce == 1){
     lado_esquerdo_voce.src = "./imagens/Meu projeto.png"
     setTimeout(()=>{
-        img_voce.src = "./imagens/dsBuffer.bmp.png"
-        quadrim_voce[contador].appendChild(img_voce)
-        contador++
+            imagem[contador].src = "./imagens/dsBuffer.bmp.png"
+            imagem[contador].style.display = "flex"
+            contador++
     },'100')
    }
    if (valor_voce == 2){
     lado_esquerdo_voce.src = "./imagens/tesoura_esquerda-removebg-preview.png"
     setTimeout(()=>{
-        img_voce.src = "./imagens/mao-com-dois-dedos-para-cima-vitoria-ou-simbolo-de-paz-letra-v-em-gesto-de-tesoura-de-linguagem-gest.png"
-        quadrim_voce[contador].appendChild(img_voce)
-        contador++
+        imagem[contador].src = "./imagens/mao-com-dois-dedos-para-cima-vitoria-ou-simbolo-de-paz-letra-v-em-gesto-de-tesoura-de-linguagem-gest.png"
+            imagem[contador].style.display = "flex"
+            contador++
     },'100')
     if (contador == 9){
         contador = 0
