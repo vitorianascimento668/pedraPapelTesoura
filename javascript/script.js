@@ -3,9 +3,9 @@ let imagens_container = document.querySelector (".imagens_container")
 let joquepo_container = document.querySelector(".joquepo_container")
 let lado_esquerdo_voce = document.querySelector(".joquepo1")
 let lado_direito_robo = document.querySelector(".joquepo2")
-let quadrim_voce = document.querySelectorAll(".quadradim")
-let quadrim_robo = document.querySelectorAll(".quadrim_baixo")
+
 let imagem = document.querySelectorAll(".imagem")
+let imagem_robo = document.querySelectorAll(".imagem_robo")
 let novarN = document.querySelector(".jogaNovamente")
 let data_num,data_voce,data_robo, v_sorteado, valor_voce, valor_robo, varvoce = "", varrobo = "", contador = 0, img_voce, img_robo, contador2=0
 
@@ -52,7 +52,7 @@ function valorescolhido_voce(valor_voce) {
             imagem[contador].style.display = "flex"
             contador++
     },'100')
-    if (contador == 9){
+    if (contador == 10){
         contador = 0
     }
    }
@@ -61,8 +61,8 @@ function valorescolhido_robo(valor_robo) {
     if(valor_robo == 0){
         lado_direito_robo.src = "./imagens/pedra_direita-removebg-preview.png"
         setTimeout(()=>{
-            img_robo.src = "./imagens/ilustracao-de-desenho-animado-com-a-mao-fechada-pop-art-ilustracao_244307-535-removebg-preview.png"
-            quadrim_robo[contador2].appendChild(img_robo)
+            imagem_robo[contador2].src = "./imagens/ilustracao-de-desenho-animado-com-a-mao-fechada-pop-art-ilustracao_244307-535-removebg-preview.png"
+            imagem_robo[contador2].style.display = "flex"
             contador2++
         },'100')
         
@@ -70,28 +70,25 @@ function valorescolhido_robo(valor_robo) {
     if(valor_robo == 1){
         lado_direito_robo.src = "./imagens/papel_direito-removebg-preview.png"
         setTimeout(()=>{
-            img_robo.src = "./imagens/dsBuffer.bmp.png"
-            quadrim_robo[contador2].appendChild(img_robo)
+            imagem_robo[contador2].src = "./imagens/dsBuffer.bmp.png"
+            imagem_robo[contador2].style.display = "flex"
             contador2++
         },'100')
     }
     if(valor_robo == 2){
         lado_direito_robo.src = "./imagens/tesoura_direita-removebg-preview.png"
         setTimeout(()=>{
-            img_robo.src = "./imagens/mao-com-dois-dedos-para-cima-vitoria-ou-simbolo-de-paz-letra-v-em-gesto-de-tesoura-de-linguagem-gest.png"
-            quadrim_robo[contador2].appendChild(img_robo)
+            imagem_robo[contador2].src = "./imagens/mao-com-dois-dedos-para-cima-vitoria-ou-simbolo-de-paz-letra-v-em-gesto-de-tesoura-de-linguagem-gest.png"
+            imagem_robo[contador2].style.display = "flex"
             contador2++
         },'100')
         
     }
+    if (contador2 == 10){
+        contador2 = 0
+    }
 }
-function criando_img (){
-    img_voce = document.createElement("img")
-    img_voce.classList.add("img_pequenininha")
-    img_robo = document.createElement("img")
-    img_robo.classList.add("img_pequenininha")
-    
-}
+
 function  novarNovamente(){
     novarN.addEventListener('click',()=>{
         imagens_container.style.display = "flex"
@@ -100,4 +97,4 @@ function  novarNovamente(){
 }
 novarNovamente()
 jogada_voce()
-criando_img ()
+
