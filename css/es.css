@@ -254,6 +254,13 @@ h1{
         margin-bottom: 40px;
         
 }
+.quemGanhou{
+    font-size:25px;
+    color:white;
+    margin-bottom:10px;
+    margin-top:-10px;
+    text-align: center;
+}
 
 .jogaNovamente, .limpar_jogo_placar{
     color:black;
