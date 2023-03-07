@@ -30,15 +30,16 @@ function jogada_robo(){
 }
 function valorescolhido_voce(valor_voce) {
    if (valor_voce == 0){
-    lado_esquerdo_voce = "./imagens/pedra_direita-removebg-preview.png"
+    lado_esquerdo_voce.src = "./imagens/pedra_esquerda-removebg-preview.png"
         setTimeout(()=>{
             imagem[contador].src = "./imagens/ilustracao-de-desenho-animado-com-a-mao-fechada-pop-art-ilustracao_244307-535-removebg-preview.png"
             imagem[contador].style.display = "flex"
             contador++
         },'100')
    }
+  
    if (valor_voce == 1){
-    lado_esquerdo_voce.src = "./imagens/Meu projeto.png"
+    lado_esquerdo_voce.src = "./imagens/Meu_projeto.png"
     setTimeout(()=>{
             imagem[contador].src = "./imagens/dsBuffer.bmp.png"
             imagem[contador].style.display = "flex"
@@ -56,6 +57,8 @@ function valorescolhido_voce(valor_voce) {
         contador = 0
     }
    }
+   
+
 }
 function valorescolhido_robo(valor_robo) {
     if(valor_robo == 0){
