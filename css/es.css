@@ -254,3 +254,20 @@ h1{
         margin-bottom: 40px;
         
 }
+
+.jogaNovamente, .limpar_jogo_placar{
+    color:black;
+    font-weight: bold;
+    border: 3px solid black;
+    border-radius: 15px;
+    text-align: center;
+    margin: auto;
+    cursor: pointer;
+}
+.limpar_jogo_placar{
+    width: 100px;
+}
+.jogaNovamente{
+    width: 160px;
+    margin-bottom: 10px;
+}
