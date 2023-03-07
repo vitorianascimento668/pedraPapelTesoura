@@ -151,7 +151,7 @@ function QuemGanhou(){
             robo_pontos = 0
             voce_pontos = 0
         }
-
+        naoJogue()
 
 }
 function  novarNovamente(){
@@ -182,9 +182,32 @@ function limpa(){
     })
    
 }
+function naoJogue(){
+    if (imagem[9].style.display == "flex"){
+        alert("Esse jogo já foi finalizado, vamos começar novamente!")
+        imagens_container.style.display = "flex"
+        joquepo_container.style.display = "none"
+        for (let lim_cont = 0; lim_cont < imagem.length; lim_cont++){
+            imagem[lim_cont].src = ""
+            imagem[lim_cont].style.display = "none"
+            imagem_robo[lim_cont].src = ""
+            imagem_robo[lim_cont].style.display = "none"
+            contador = 0
+            contador2 = 0
+            cont_quemGanhou = 0
+            quemGanhou.innerHTML = ""
+            robo_pontos = 0
+            voce_pontos = 0
+            textorobo.innerHTML = `ROBO: `
+            textovoce.innerHTML = `VOCÊ: `
 
+        }
+    }
+
+}
 novarNovamente()
 jogada_voce()
 limpa()
+
 
 
