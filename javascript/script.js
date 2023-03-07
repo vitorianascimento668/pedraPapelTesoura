@@ -1,6 +1,7 @@
 let jogada_escolha = document.querySelectorAll(".mao")
 let imagens_container = document.querySelector (".imagens_container")
 let joquepo_container = document.querySelector(".joquepo_container")
+let limpar_jogo = document.querySelector(".limpar_jogo_placar")
 let textorobo = document.querySelector(".robo_azul")
 let textovoce = document.querySelector(".vc_ver")
 let lado_esquerdo_voce = document.querySelector(".joquepo1")
@@ -159,7 +160,14 @@ function  novarNovamente(){
         joquepo_container.style.display = "none"
     })
 }
+function limpa(){
+    limpar_jogo.addEventListener("click",()=>{
+        
+    })
+   
+}
 novarNovamente()
 jogada_voce()
+limpa()
 
 
