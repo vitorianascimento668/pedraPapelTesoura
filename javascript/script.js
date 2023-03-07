@@ -5,6 +5,7 @@ let lado_esquerdo_voce = document.querySelector(".joquepo1")
 let lado_direito_robo = document.querySelector(".joquepo2")
 let quadrim_voce = document.querySelectorAll(".quadradim")
 let quadrim_robo = document.querySelectorAll(".quadrim_baixo")
+let imagem = document.querySelectorAll(".imagem")
 let novarN = document.querySelector(".jogaNovamente")
 let data_num,data_voce,data_robo, v_sorteado, valor_voce, valor_robo, varvoce = "", varrobo = "", contador = 0, img_voce, img_robo, contador2=0
 
@@ -32,7 +33,7 @@ function valorescolhido_voce(valor_voce) {
     lado_esquerdo_voce = "./imagens/pedra_direita-removebg-preview.png"
         setTimeout(()=>{
             img_voce.src = "./imagens/ilustracao-de-desenho-animado-com-a-mao-fechada-pop-art-ilustracao_244307-535-removebg-preview.png"
-            quadrim_voce[contador].appendChild(img_voce)
+            quadrim_voce[contador] =  quadrim_voce[contador].appendChild(img_voce)
             contador++
         },'100')
    }
