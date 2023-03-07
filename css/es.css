@@ -271,6 +271,6 @@ h1{
     width: 160px;
     margin-bottom: 10px;
 }
-.imagem{
+.imagem, .imagem_robo{
     display: none;
 }
