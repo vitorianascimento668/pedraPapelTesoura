@@ -5,6 +5,7 @@ let lado_esquerdo_voce = document.querySelector(".joquepo1")
 let lado_direito_robo = document.querySelector(".joquepo2")
 let quadrim_voce = document.querySelectorAll(".quadradim")
 let quadrim_robo = document.querySelectorAll(".quadrim_baixo")
+let novarN = document.querySelector(".jogaNovamente")
 let data_num,data_voce,data_robo, v_sorteado, valor_voce, valor_robo, varvoce = "", varrobo = "", contador = 0, img_voce, img_robo, contador2=0
 
 
@@ -90,5 +91,12 @@ function criando_img (){
     img_robo.classList.add("img_pequenininha")
     
 }
+function  novarNovamente(){
+    novarN.addEventListener('click',()=>{
+        imagens_container.style.display = "flex"
+        joquepo_container.style.display = "none"
+    })
+}
+novarNovamente()
 jogada_voce()
 criando_img ()
